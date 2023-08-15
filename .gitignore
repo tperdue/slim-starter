@@ -1,0 +1,43 @@
+# Vendor directory (composer dependencies)
+/vendor/
+
+# Environment files
+.env
+
+# Node modules directory
+/node_modules/
+
+# macOS filesystem files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# VSCode IDE
+.vscode/
+
+# Other common directories
+.cache
+logs/
+
+# PHPUnit coverage reports
+coverage/
+
+
+# Other
+project_docs/

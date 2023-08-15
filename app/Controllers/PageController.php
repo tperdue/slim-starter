@@ -5,11 +5,12 @@ namespace App\Controllers;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
-class PageController
+class PageController extends BaseController
 {
     public function index(Request $request, Response $response)
     {
-        $response->getBody()->write('Hello World');
+        $appName = $this->container->get('settings')['app']['name'];
+        $response->getBody()->write('Hello World from ' . $appName);
         return $response;
     }
 }

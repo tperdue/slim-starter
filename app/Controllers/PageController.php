@@ -10,7 +10,6 @@ class PageController extends BaseController
     public function index(Request $request, Response $response)
     {
         $appName = $this->container->get('settings')['app']['name'];
-        $response->getBody()->write('Hello World from ' . $appName);
-        return $response;
+        return $this->container->get('view')->render($response, 'home.twig', ['appName' => $appName]);
     }
 }

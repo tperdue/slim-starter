@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cd public && php -S localhost:8000"
+    "server": "cd public && php -S localhost:8000",
+    "dump-autoload": "composer dump-autoload -o"
   },
   "keywords": [],
   "author": "",

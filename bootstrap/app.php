@@ -6,7 +6,7 @@ use DI\Bridge\Slim\Bridge;
 use DI\Container;
 
 # Create Container
-$container = new Container();
+$container = require __DIR__ . '/container.php';
 
 # Create App
 $app = Bridge::create($container);

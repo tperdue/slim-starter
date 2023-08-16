@@ -12,7 +12,7 @@ $container = new Container();
 $container->set('settings', function () {
     return [
         'app' => [
-            'name' => 'Slim 4 Skeleton',
+            'name' => $_SERVER['APP_NAME'],
         ]
     ];
 });

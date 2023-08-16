@@ -5,6 +5,11 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use DI\Bridge\Slim\Bridge;
 use DI\Container;
 use Slim\Views\TwigMiddleware;
+use Dotenv\Dotenv;
+
+// Load Environment Variables
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->safeLoad();
 
 // Create Container
 $container = require __DIR__ . '/container.php';
